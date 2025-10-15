@@ -6,10 +6,10 @@ export default function Hero() {
 
   return (
     <section className="min-h-[60vh] flex items-center" id="hero">
-      <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <TextType
-            text={["Text typing effect", "for your websites", "Happy coding!"]}
+            text={["I am Kwame", "A web developer."]}
             className="text-4xl md:text-5xl font-extrabold mb-4"
             typingSpeed={75}
             pauseDuration={1500}
