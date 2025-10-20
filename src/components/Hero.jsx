@@ -1,15 +1,15 @@
 import React from "react";
-import headshot from "../assets/headshot.jpg";
+import headshot from "../assets/headshot.png";
+import ProfileCard from "./ProfileCard";
 import TextType from "./TextType";
 
 export default function Hero() {
-
   return (
     <section className="min-h-[60vh] flex items-center" id="hero">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <TextType
-            text={["I am Kwame", "A web developer."]}
+            text={["I am 'Your Name'", "I am an Aspiring Software Engineer."]}
             className="text-4xl md:text-5xl font-extrabold mb-4"
             typingSpeed={75}
             pauseDuration={1500}
@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="flex gap-3">
             <a
               href="#projects"
-              className="inline-block bg-sky-600 text-white px-4 py-2 rounded-md shadow hover:bg-sky-700"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-400"
             >
               See projects
             </a>
@@ -36,11 +36,26 @@ export default function Hero() {
           </div>
         </div>
         <div className="hidden md:flex justify-end">
-          <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
-            <img
-              src={headshot}
-              alt="Headshot"
-              className="w-full h-full object-cover"
+          <div className="">
+            <ProfileCard
+              name="Your Name"
+              title="Aspiring Software Engineer"
+              handle="your_handle"
+              status="Online"
+              contactText="Contact Me"
+              avatarUrl={headshot}
+              iconUrl=""
+              showUserInfo={true}
+              enableTilt={true}
+              enableMobileTilt={false}
+              onContactClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth", block: "start" });
+                } else {
+                  window.location.hash = "#contact";
+                }
+              }}
             />
           </div>
         </div>
