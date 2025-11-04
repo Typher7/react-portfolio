@@ -252,7 +252,7 @@ const PillNav = ({
           </Link>
         ) : (
           <a
-            href={items?.[0]?.href || '#'}
+            href={'#'}
             aria-label="Home"
             onMouseEnter={handleLogoEnter}
             ref={el => {

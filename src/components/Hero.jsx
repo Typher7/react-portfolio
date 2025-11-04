@@ -2,10 +2,25 @@ import React from "react";
 import headshot from "../assets/headshot.png";
 import ProfileCard from "./ProfileCard";
 import TextType from "./TextType";
+import TrueFocus from "./TrueFocus";
 
 export default function Hero() {
   return (
-    <section className="min-h-[60vh] flex items-center" id="hero">
+    <section
+      className="min-h-[60vh] flex flex-col items-center pt-32"
+      id="hero"
+    >
+      <div className="w-full justify-center pt-48 mb-6 block md:hidden">
+        <TrueFocus
+          sentence="Your Name"
+          manualMode={false}
+          blurAmount={5}
+          borderColor="blue"
+          glowColor="rgba(0, 0, 255, 0.6)"
+          animationDuration={1}
+          pauseBetweenAnimations={1}
+        />
+      </div>
       <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <TextType
@@ -16,7 +31,6 @@ export default function Hero() {
             showCursor={true}
             cursorCharacter="|"
           />
-
           <p className="text-lg text-slate-700 mb-6">
             I build accessible, performant web apps with React and Tailwind CSS.
           </p>
