@@ -1,5 +1,6 @@
 # Personal Portfolio Website
 
+
 A modern, responsive portfolio website built with React, Vite, and TailwindCSS. This portfolio showcases my projects, skills, and professional experience with smooth animations powered by GSAP.
 
 ## 🚀 Features
