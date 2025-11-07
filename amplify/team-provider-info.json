@@ -10,6 +10,14 @@
       "StackName": "amplify-reactportfolio-dev-6d380",
       "StackId": "arn:aws:cloudformation:us-east-2:436637927025:stack/amplify-reactportfolio-dev-6d380/72a02230-bb6a-11f0-89ed-025303d82567",
       "AmplifyAppId": "d114osc4mbvd8g"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d114osc4mbvd8g",
+          "type": "manual"
+        }
+      }
     }
   }
 }
